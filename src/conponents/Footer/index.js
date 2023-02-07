@@ -3,6 +3,7 @@ import React from 'react';
 import { Col, Row } from 'antd';
 import { FacebookOutlined, TwitterOutlined,LinkedinOutlined} from '@ant-design/icons';
 import '../Footer/style.scss';
+import { Link } from "react-router-dom";
 function Footer() {
 
   return (
@@ -19,12 +20,10 @@ function Footer() {
           <div>
           <h6>Categories</h6>
             <ul class="footer-links">
-              <li><a href="#">C</a></li>
-              <li><a href="#">UI Design</a></li>
-              <li><a href="#">PHP</a></li>
-              <li><a href="#">Java</a></li>
-              <li><a href="#">Android</a></li>
-              <li><a href="#">Templates</a></li>
+              <li>  <Link to={"#"}>News</Link></li>
+              <li>  <Link to={"#"}>About us</Link></li>
+              <li>  <Link to={"#"}>Contact</Link></li>
+
             </ul>
           </div>
         </Col>
@@ -32,31 +31,32 @@ function Footer() {
           <div>
           <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Contribute</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Sitemap</a></li>
+              <li>  <Link to={"#"}>About Us</Link></li>
+              <li>  <Link to={"#"}>Contact Us</Link></li>
+              <li>  <Link to={"#"}>Contribute</Link></li>
+              <li>  <Link to={"#"}>Privacy Policy</Link></li>
+              <li>  <Link to={"#"}>Sitemap</Link></li>
             </ul>
           </div>
         </Col>
 
       </Row>
+      <br/>
       <Row justify="center" gutter={[24, 24]}>
 
         <Col  xs={24} sm={12} md={12} lg={12}>
           <div>
           <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-              <a href="#">VanKhai</a>.
+                <Link to={"#"}>{" "}Van Khai</Link>.
             </p>
           </div>
         </Col>
         <Col justify='end' xs={24} sm={12} md={12} lg={12}>
           <div>
           <ul class="social-icons">
-              <li><a class="facebook" href="#"><FacebookOutlined /></a></li>
-              <li><a class="twitter" href="#"><TwitterOutlined /></a></li>
-              <li><a class="linkedin" href="#"><LinkedinOutlined /></a></li>
+              <li> <Link class="facebook" ><FacebookOutlined /></Link></li>
+              <li> <Link class="twitter" ><TwitterOutlined /></Link></li>
+              <li> <Link class="linkedin" ><LinkedinOutlined /></Link></li>
             </ul>
           </div>
         </Col>

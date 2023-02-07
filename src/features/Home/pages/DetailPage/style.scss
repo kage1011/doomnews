@@ -1,8 +1,91 @@
 .detailLayout {
     margin-top: 10px;
+    width: 70%;
     text-align: center;
 }
-.news-content{
+
+.detailLayout2 {
+    margin-top: 10px;
+    width: 30%;
+    text-align: left;
+}
+
+.news-content {
     padding: 30px;
     text-align: left;
+}
+
+
+/*centres in the middle */
+.fixed-width {
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+}
+
+.top-menu-bar {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    color: black;
+}
+
+.watch-listen-top-menu {
+    border-left: 1px solid #b4b4b4;
+    padding-left: 15px;
+}
+
+.watch-listen-top-menu h2 {
+    font-size: 25px;
+}
+
+.watch-listen-top-menu img {
+    float: left;
+    padding: 5px;
+}
+
+.watch-listen-top-menu p {
+    padding-top: 8px;
+    font-size: 1em;
+}
+
+.watch-listen-top-menu p:hover {
+    color: #1167a8;
+}
+
+.will-kate-video-clip {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e6e6e6;
+
+}
+
+.will-kate-video-clip:hover {
+    color: #1167a8;
+}
+
+.time-caption {
+    font-size: 12px;
+    text-align: left;
+}
+
+.will-kate-video-caption {
+    font-weight: bold;
+    font-size: 13.5px;
+    text-align: left;
+
+}
+
+#content-links {
+    width: 250px;
+}
+
+#content-links a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.3em;
+}
+
+#content-links a:hover {
+    color: #1167a8;
 }

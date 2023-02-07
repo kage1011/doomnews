@@ -43,7 +43,9 @@ function MainPage() {
             <Row justify="start" gutter={[24, 24]}>
                 {PostsData.map((x, index) => {
                     return (
-                        <Col key={index} xs={24} sm={12} md={8} lg={6}>
+                        <Col key={index} xs={24} sm={12} md={8} lg={6}  style={{
+                           paddingLeft:0,paddingRight:0
+                        }}>
                             <NewsCard title = {x.title} image = {x.image} text ={x.text}  newsId ={x.id}/>
                         </Col>
                     );

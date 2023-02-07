@@ -49,11 +49,37 @@ function DetailPage() {
         fetchNews();
     }, [newsId])
     return (
-        <div className='detailLayout'>
-            <img alt={news.title} src={news.image}></img>
-            <p>{news.title}</p>
-            <div className='news-content'>
-                <span>{news.text}</span>
+        <div style={{ display: 'flex' }}>
+            <div className='detailLayout'>
+                <img alt={news.title} src={news.image}></img>
+                <p>{news.title}</p>
+                <div className='news-content'>
+                    <span>{news.text}</span>
+                </div>
+            </div>
+
+            <div className='detailLayout2'>
+                <div className="layout-right">
+                    <div className="fixed-width">
+                        <div className="watch-listen-sidebar">
+                            <div className="watch-listen-top-menu">
+                                <h2>Watch/Listen</h2>
+
+                                <img alt='' src="https://i.imgur.com/QrvKEVD.png" ></img>
+                                <p className="news-channel-icon">BBC News Channel</p>
+                                <img alt=''  src="https://imgur.com/9FV7DCa.png" />
+                                <p className="radio-channel-icon">BBC Radio 5 Live</p>
+                            </div>
+
+                            <div className="will-kate-video-clip">
+                                <img alt=''  src="https://ichef.bbci.co.uk/news/270/cpsprodpb/C6EE/production/_89162905_89162903.jpg" ></img>
+                                <p className="will-kate-video-caption">Royal Couple's India visit gets underway</p>
+                                <p className="time-caption">2:25</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

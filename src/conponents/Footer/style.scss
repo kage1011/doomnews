@@ -1,8 +1,16 @@
+.footerlayout{
+    margin-left: 1%;
+    width: 98%;
+    border-top: #afafaf 1px dotted;
+}
 .footerlayout p {
     font-size: 1rem;
 }
 
 i {
+    font-size: 16px;
+}
+h6{
     font-size: 16px;
 }
 
@@ -59,6 +67,10 @@ i {
     color: #3366cc;
     text-decoration: none;
 }
+.footer-links a:hover {
+    padding-left: 10px;
+    transition: 0.5s;
+}
 
 .footer-links.inline li {
     display: inline-block
@@ -100,6 +112,7 @@ i {
 }
 
 .social-icons {
+    margin-top: -20px;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none

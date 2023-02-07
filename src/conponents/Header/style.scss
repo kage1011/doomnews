@@ -6,6 +6,44 @@
 .menu{
     text-align: center;
 }
+.menu-head{
+    display: flex;
+}
+.menu-head .menu-left{
+    width: 70%;
+    text-align: left;
+}
+.menu-head .menu-right{
+    text-align: right;
+    width: 30%;
+    padding: 5px;
+    margin: auto;
+}
+input .ant-input .css-dev-only-do-not-override-9ntgx0{
+    display: none;
+    width: 50% !important;
+}
+// @media (max-width:991px) {
+//     .site-footer [class^=col-] {
+//         margin-bottom: 30px
+//     }
+// }
+
+@media (max-width:767px) {
+    .menu-head{
+        display: block;
+    }
+    .menu-head .menu-left{
+        width: 100%;
+        text-align: center;
+    }
+    .menu-head .menu-right{
+        text-align: center;
+        width: 50%;
+        padding: 5px;
+        margin: auto;
+    }
+}
 .banner{
     height: 200px;
     background-image: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg);
